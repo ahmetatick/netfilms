@@ -6,7 +6,12 @@ const Footer = () => {
   return (
     <footer className={styles.footer}>
       Made with 🖤 by&nbsp;
-      <Link href="https://www.linkedin.com/in/ahmetatik">Ahmet Atik</Link>
+      <Link
+        href="https://www.linkedin.com/in/ahmetatik"
+        target="_blank"
+      >
+        Ahmet Atik
+      </Link>
     </footer>
   );
 };
