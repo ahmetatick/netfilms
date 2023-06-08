@@ -9,9 +9,7 @@ const Footer = () => {
       <Link
         href="https://www.linkedin.com/in/ahmetatik"
         target="_blank"
-      >
-        Ahmet Atik
-      </Link>
+      ></Link>
     </footer>
   );
 };
