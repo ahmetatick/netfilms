@@ -13,6 +13,7 @@ const Footer = () => {
         Ahmet Atik
       </Link>
       <br />
+      <br />
     </footer>
   );
 };
