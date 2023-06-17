@@ -12,7 +12,6 @@ const Footer = () => {
       >
         Ahmet Atik
       </Link>
-      <br />
     </footer>
   );
 };
