@@ -1,7 +1,7 @@
 import React from "react";
 
 const Categories = () => {
-  return <div>Categorie</div>;
+  return <div>Categori</div>;
 };
 
 export default Categories;
