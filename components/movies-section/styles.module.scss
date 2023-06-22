@@ -15,3 +15,16 @@
   grid-auto-rows: 320px;
   gap: 24px;
 }
+
+.movie {
+  overflow: hidden;
+  border-radius: 8px;
+  position: relative;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease;
+}
+
+.movie:hover {
+  z-index: 9;
+  transform: scale(1.25);
+}
