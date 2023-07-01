@@ -18,9 +18,6 @@ const HomeContainer = () => {
         title="Your Favourites"
         movies={Movies.results.slice(8, 16)}
       />
-      <br />
-      <br />
-      <br />
     </div>
   );
 };
