@@ -19,6 +19,7 @@ const HomeContainer = () => {
         movies={Movies.results.slice(8, 16)}
       />
       <br />
+      <br />
     </div>
   );
 };
