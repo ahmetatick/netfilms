@@ -10,6 +10,7 @@ const HomePage = async ({ params }) => {
   await delay(20000);
   await delay(20000);
   await delay(20000);
+  await delay(20000);
   let selectedCategory;
   if (params.category?.length > 0) {
     selectedCategory = true;
