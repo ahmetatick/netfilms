@@ -11,8 +11,6 @@ const Loading = () => {
       <MoviesSectionLoading />
       <MoviesSectionLoading />
       <MoviesSectionLoading />
-      <br />
-      <br />
     </div>
   );
 };
