@@ -12,6 +12,7 @@ const Loading = () => {
       <MoviesSectionLoading />
       <MoviesSectionLoading />
       <br />
+      <br />
     </div>
   );
 };
