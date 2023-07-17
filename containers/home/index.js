@@ -5,7 +5,7 @@ import FeaturedMovie from "@/components/featured-movie";
 import Categories from "@/components/categories";
 import MoviesSection from "@/components/movies-section";
 
-const HomeContainer = ({ selectedCategory }) => {
+const HomeContainer = ({ popularMovies = [], selectedCategory }) => {
   return (
     <div>
       <FeaturedMovie movie={Movies.results[0]} />
@@ -21,7 +21,7 @@ const HomeContainer = ({ selectedCategory }) => {
       )}
       <MoviesSection
         title="Popular Movies"
-        movies={Movies.results.slice(0, 8)}
+        movies={popularMovies.slice(0, 8)}
       />
       <MoviesSection
         title="Your Favourites"
