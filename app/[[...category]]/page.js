@@ -22,6 +22,7 @@ const getPopularMovies = async () => {
 
 const HomePage = async ({ params }) => {
   let selectedCategory;
+  let i;
 
   const { results: popularMovies } = await getPopularMovies();
 
