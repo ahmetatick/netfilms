@@ -1,49 +1,25 @@
-import HomeContainer from "@/containers/home";
 import React from "react";
-import Movies from "@/mocks/movies.json";
+import HomeContainer from "@/containers/home";
 
-const API_URL = `https://api.themoviedb.org/3`;
-
-const getSingleCategory = async (genreId) => {
-  const resp = await fetch(
-    `${API_URL}/discover/movie?api_key=${process.env.API_KEY}&with_genres=${genreId}`
-  );
-  return resp.json();
-};
-
-const getCategories = async () => {
-  const resp = await fetch(
-    `${API_URL}/genre/movie/list?api_key=${process.env.API_KEY}`
-  );
-  return resp.json();
-};
-
-const getPopularMovies = async () => {
-  const resp = await fetch(
-    `${API_URL}/movie/popular?api_key=${process.env.API_KEY}`
-  );
-  return resp.json();
-};
-
-const getTopRatedMovies = async () => {
-  const resp = await fetch(
-    `${API_URL}/movie/top_rated?api_key=${process.env.API_KEY}`
-  );
-  return resp.json();
-};
+import {
+  getSingleCategory,
+  getCategories,
+  getPopularMovies,
+  getTopRatedMovies,
+} from "@/services/movie";
 
 const HomePage = async ({ params }) => {
   let selectedCategory;
-
-  const popularPromise = getPopularMovies();
-  const topRatedPromise = getTopRatedMovies();
-  const categoryPromise = getCategories();
 
   const [
     { results: popularMovies },
     { results: topRatedMovies },
     { genres: categories },
-  ] = await Promise.all([popularPromise, topRatedPromise, categoryPromise]);
+  ] = await Promise.all([
+    getPopularMovies(),
+    getTopRatedMovies(),
+    getCategories(),
+  ]);
 
   if (params.category?.length > 0) {
     const { results } = await getSingleCategory(params.category[0]);
