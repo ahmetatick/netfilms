@@ -30,6 +30,7 @@ const HomePage = async ({ params }) => {
   if (params.category?.length > 0) {
     selectedCategory = true;
   }
+
   return (
     <HomeContainer
       popularMovies={popularMovies}
