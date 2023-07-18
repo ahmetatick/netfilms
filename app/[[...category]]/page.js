@@ -22,7 +22,6 @@ const HomePage = async ({ params }) => {
   let selectedCategory;
 
   const popularPromise = getPopularMovies();
-
   const topRatedPromise = getTopRatedMovies();
 
   const [{ results: popularMovies }, { results: topRatedMovies }] =
