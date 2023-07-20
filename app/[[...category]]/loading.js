@@ -3,7 +3,7 @@ import FeaturedMovieLoading from "@/components/featured-movie/loading";
 import MoviesSectionLoading from "@/components/movies-section/loading";
 import React from "react";
 
-const Loading = () => {
+const HomeLoading = () => {
   return (
     <div>
       <FeaturedMovieLoading />
@@ -15,4 +15,4 @@ const Loading = () => {
   );
 };
 
-export default Loading;
+export default HomeLoading;
