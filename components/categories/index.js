@@ -14,9 +14,6 @@ const Categories = ({ categories }) => {
           <div className={styles.name}>{category.name}</div>
         </Link>
       ))}
-      <br />
-      <br />
-      <br />
     </div>
   );
 };
