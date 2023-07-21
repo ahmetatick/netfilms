@@ -16,6 +16,7 @@ const Categories = ({ categories }) => {
       ))}
       <br />
       <br />
+      <br />
     </div>
   );
 };
