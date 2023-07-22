@@ -15,6 +15,7 @@ const Categories = ({ categories }) => {
         </Link>
       ))}
       <br />
+      <br />
     </div>
   );
 };
