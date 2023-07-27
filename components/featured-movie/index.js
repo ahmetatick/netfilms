@@ -29,7 +29,7 @@ const FeaturedMovie = ({ movie = {}, isCompact = true }) => {
         </button>
       </div>
       <div className={styles.moviePoster}>
-        <div className={styles.moviPosterOverlay}></div>
+        <div className={styles.moviePosterOverlay}></div>
         <Image
           unoptimized
           src={`https://image.tmdb.org/t/p/original${poster_path}`}

@@ -5,7 +5,7 @@ import Image from "next/image";
 
 const MoviesSection = ({ title, movies }) => {
   return (
-    <div className={styles.MoviesSection}>
+    <div className={styles.moviesSection}>
       <h3 className={styles.title}>{title}</h3>
       <div className={styles.movies}>
         {movies.map((movie) => (

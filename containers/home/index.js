@@ -11,7 +11,9 @@ const HomeContainer = ({
 }) => {
   return (
     <div>
-      <FeaturedMovie movie={popularMovies?.[0]} />
+      <FeaturedMovie
+        movie={popularMovies[Math.floor(Math.random() * popularMovies.length)]}
+      />
       <Categories categories={categories.slice(0, 5)} />
       {selectedCategory.movies.length > 0 && (
         <MoviesSection
@@ -24,11 +26,11 @@ const HomeContainer = ({
       )}
       <MoviesSection
         title="Popular Movies"
-        movies={popularMovies.slice(0, 8)}
+        movies={popularMovies.slice(0, 12)}
       />
       <MoviesSection
-        title="Your Favourites"
-        movies={topRatedMovies.slice(8, 16)}
+        title="Top Rated Movies"
+        movies={topRatedMovies.slice(0, 12)}
       />
     </div>
   );
